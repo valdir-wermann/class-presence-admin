@@ -8,12 +8,11 @@ const create = () => {
         password: password.value
     };
 
-    fetch(`https://causal-scorpion-rapidly.ngrok-free.app/api/teacher_code/create`, {
+    fetch(`https://class-presence-backend.onrender.com/api/teacher_code/create`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': localStorage.getItem('authorization'),
-            'ngrok-skip-browser-warning': 'true'
+            'Authorization': localStorage.getItem('authorization')
         },
         body: JSON.stringify(body)
     })
