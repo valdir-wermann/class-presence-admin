@@ -11,12 +11,17 @@
 <body>
 
     <div>
-        <div>
+        <div style="display: flex; flex-direction: column; max-width: 524px;">
             <span>Nome:</span>
             <input type="text" id="username">
             <br />
             <span>Senha:</span>
             <input type="password" id="password">
+            <span>Tipo Usuário:</span>
+            <select id="type">
+                <option value="student">Aluno</option>
+                <option value="teacher">Professor</option>
+            </select>
         </div>
 
         <button id="create">Criar código!</button>
